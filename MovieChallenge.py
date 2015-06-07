@@ -38,19 +38,19 @@ movies=[
  ]
 
 score=0
-have_seen=[]
+have_watched=[]                          # 建立一个空数组
 
-def func_have_seen(movie):
-	have_seen.append(movie)
-	return have_seen
+def func_have_watched(movie):
+	have_watched.append(movie)
+	return have_watched
 
 for movie in movies:
 	print movie
 	answer=raw_input("如果看过就按 Y ,然后按return键继续；否则直接按return键继续。。")
-	if answer=="Y" or answer=="y":
+	if answer=="Y" or answer=="y":    # 判断用户命令
 		score=score+0.4
 		print "当前分数：",score
-		func_have_seen(movie)
+		func_have_watched(movie)  # 调用func_have_watched函数
 	else:
 		pass
 
@@ -61,5 +61,5 @@ else:
 	print '总得分', score
 	print "及格了，不错。"
 
-print '你看过这些：',have_seen
+print '你看过这些：',have_watched
 
