@@ -44,8 +44,8 @@ def func_have_watched(movie):            # 建立func_have_watched函数，用�
 	have_watched.append(movie)
 	return have_watched
 
-for movie in movies:
-	print movie
+for movie in movies:       
+	print movie                       # 遍历数组movies元素，并取出movie
 	answer=raw_input("如果看过就按 Y ,然后按return键继续；否则直接按return键继续。。")
 	if answer=="Y" or answer=="y":    # 判断用户命令
 		score=score+0.4
