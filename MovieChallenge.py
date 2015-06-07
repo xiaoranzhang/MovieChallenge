@@ -40,7 +40,7 @@ movies=[
 score=0
 have_watched=[]                          # 建立一个空数组
 
-def func_have_watched(movie):
+def func_have_watched(movie):            # 建立func_have_watched函数，用于添加数组元素
 	have_watched.append(movie)
 	return have_watched
 
